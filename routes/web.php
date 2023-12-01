@@ -24,6 +24,3 @@ Route::match(['get', 'post'], '/botman', '\App\Http\Controllers\BotManController
 
 Route::match(['get', 'post'], 'bot', BotController::class);
 
-Route::post('/botmanfunc',function (){
-    app('botman')->listen();
-});
